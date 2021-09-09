@@ -1,0 +1,53 @@
+GET http://localhost:8080/solar-farm HTTP/1.1
+
+###
+
+GET http://localhost:8080/solar-farm/Rose HTTP/1.1
+
+###
+
+GET http://localhost:8080/solar-farm/Rose/10/10 HTTP/1.1
+
+###
+
+GET http://localhost:8080/solar-farm/year/2010/2015 HTTP/1.1
+
+###
+
+GET http://localhost:8080/solar-farm/material/CIGS HTTP/1.1
+
+###
+
+POST http://localhost:8080/solar-farm HTTP/1.1
+Content-Type: application/json
+
+{
+    "solarID" : 0,
+    "section" : "Jasmine",
+    "row" : 4,
+    "col" : 3,
+    "yearInstalled" : 2001,
+    "material" : "ASI",
+    "tracking" : true
+}
+
+###
+
+PUT http://localhost:8080/solar-farm/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "solarID" : 2,
+    "section" : "Rose",
+    "row" : 2,
+    "col" : 1,
+    "yearInstalled" : 2018,
+    "material" : "GIGS",
+    "tracking" : true
+}
+
+###
+
+DELETE http://localhost:8080/solar-farm/Rose/2/1 HTTP/1.1
+
+

@@ -1,0 +1,5 @@
+solarID,section,row,col,yearInstalled,material,isTrack
+1,Sunflower,1,1,2014,CIGS,true
+2,Rose,2,1,2018,GIGS,true
+3,Jasmine,3,3,2015,POLYSI,false
+4,Rose,4,3,1999,CDTE,false
